@@ -1,0 +1,44 @@
+@import "../utils/variables";
+
+body {
+  font-family: $font-base;
+  font-size: $font-size-400;
+  color: $color-white;
+  line-height: $line-height-base-mobile;
+}
+
+h1 {
+  font-size: $font-size-600;
+  font-weight: $font-weight-bold;
+  margin-block-start: 2.7rem;
+  text-align: center;
+  letter-spacing: $letter-spacing-heading-mobile;
+  line-height: $line-height-heading-mobile;
+
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-900;
+    letter-spacing: $letter-spacing-heading-desktop;
+    line-height: $line-height-heading-desktop;
+  }
+}
+
+h2 {
+  font-size: $font-size-600;
+  font-weight: $font-weight-bold;
+  margin-block-end: 0.7rem;
+}
+
+h1,
+h2 {
+  color: $color-white;
+  line-height: $line-height-heading-mobile;
+}
+
+p {
+  text-align: center;
+  max-width: 34ch;
+
+  @media screen and (min-width: 768px) {
+    max-width: 165ch;
+  }
+}
