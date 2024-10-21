@@ -95,6 +95,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.testimonial-card:hover, .testimonial-card:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .testimonial-card .testimonial-header {
   display: grid;
@@ -140,6 +147,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.daniel:hover, .daniel:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .daniel .testimonial-header {
   display: grid;
@@ -185,6 +199,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.jonathan:hover, .jonathan:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .jonathan .testimonial-header {
   display: grid;
@@ -230,6 +251,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.jeanette:hover, .jeanette:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .jeanette .testimonial-header {
   display: grid;
@@ -275,6 +303,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.patrick:hover, .patrick:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .patrick .testimonial-header {
   display: grid;
@@ -320,6 +355,13 @@ p {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.kira:hover, .kira:focus-visible {
+  transform: scale(1.05);
+  box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.35);
 }
 .kira .testimonial-header {
   display: grid;
