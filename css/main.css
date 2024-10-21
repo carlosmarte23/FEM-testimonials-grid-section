@@ -41,6 +41,18 @@ img {
   font-size: 13px;
 }
 
+.visibly-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1rem;
@@ -350,18 +362,6 @@ p {
 body {
   background-color: hsl(210, 46%, 95%);
   min-height: 100vh;
-}
-
-.visibly-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
 }
 
 .testimonials {
