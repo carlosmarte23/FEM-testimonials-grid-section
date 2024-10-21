@@ -1,6 +1,7 @@
 @import "base/reset";
 @import "utils/variables";
 @import "base/typography";
+@import "components/card";
 
 body {
   background-color: $color-neutral-blue;
@@ -26,54 +27,9 @@ body {
   justify-content: center;
   gap: 2rem;
   margin: 0 auto;
-  width: 100%;
+  width: 85%;
   padding: 5rem 0;
   padding-block-end: 1rem;
-}
-
-.testimonial-card {
-  background-color: $color-white;
-  color: $color-dark-blue;
-  padding: 2rem;
-  border-radius: 1rem;
-  border: $color-violet 1px solid;
-
-  .testimonial-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "img name"
-      "img verified";
-    gap: 0 1rem;
-    align-items: center;
-    justify-items: left;
-
-    img {
-      max-width: 3rem;
-      border-radius: 50%;
-      border: 2px solid $color-dark-blue;
-      grid-area: img;
-    }
-    h2 {
-      grid-area: name;
-      font-size: $font-size-400;
-    }
-
-    p {
-      grid-area: verified;
-      font-size: $font-size-300;
-      opacity: 0.5;
-    }
-  }
-  blockquote {
-    margin-block-start: 1rem;
-
-    :nth-child(2) {
-      margin-block-start: 1rem;
-      opacity: 0.7;
-    }
-  }
 }
 
 .attribution {

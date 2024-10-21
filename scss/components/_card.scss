@@ -1,0 +1,23 @@
+@import "../mixins/card";
+
+.testimonial-card {
+  @include card();
+}
+
+.daniel {
+  @include card($color-violet, $color-white, $color-violet-light);
+}
+
+.jonathan {
+  @include card($color-gray-blue, $color-white, $color-gray-blue);
+}
+
+.jeanette {
+  @include card($color-white, $color-gray-blue, $color-white);
+}
+.patrick {
+  @include card($color-dark-blue, $color-white, $color-dark-blue);
+}
+.kira {
+  @include card($color-white, $color-gray-blue, $color-white);
+}
