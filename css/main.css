@@ -9,7 +9,8 @@
 body,
 h1,
 h2,
-p {
+p,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -50,7 +51,6 @@ body {
 h1 {
   font-size: 1.728rem;
   font-weight: 600;
-  margin-block-start: 2.7rem;
   text-align: center;
   letter-spacing: 0.03125rem;
   line-height: 1.6;
@@ -66,25 +66,104 @@ h1 {
 h2 {
   font-size: 1.728rem;
   font-weight: 600;
-  margin-block-end: 0.7rem;
 }
 
 h1,
 h2 {
-  color: hsl(0, 0%, 100%);
   line-height: 1.6;
 }
 
 p {
-  text-align: center;
-  max-width: 34ch;
+  max-width: 35ch;
 }
 @media screen and (min-width: 768px) {
   p {
-    max-width: 165ch;
+    max-width: 65ch;
   }
 }
 
 body {
   background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+}
+
+.visibly-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5rem 0;
+  padding-block-end: 1rem;
+}
+
+.testimonial-card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(219, 29%, 14%);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: hsl(263, 55%, 52%) 1px solid;
+}
+.testimonial-card .testimonial-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img name" "img verified";
+  gap: 0 1rem;
+  align-items: center;
+  justify-items: left;
+}
+.testimonial-card .testimonial-header img {
+  max-width: 3rem;
+  border-radius: 50%;
+  border: 2px solid hsl(219, 29%, 14%);
+  grid-area: img;
+}
+.testimonial-card .testimonial-header h2 {
+  grid-area: name;
+  font-size: 1rem;
+}
+.testimonial-card .testimonial-header p {
+  grid-area: verified;
+  font-size: 0.88rem;
+  opacity: 0.5;
+}
+.testimonial-card blockquote {
+  margin-block-start: 1rem;
+}
+.testimonial-card blockquote :nth-child(2) {
+  margin-block-start: 1rem;
+  opacity: 0.7;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: hsl(219, 29%, 14%);
+  margin-block-end: 1rem;
+}
+
+a {
+  color: hsl(263, 55%, 52%);
+  font-weight: 600;
+  margin-inline-start: 0.5ch;
+  transition: color 0.2s ease-in-out;
+}
+a:hover, a:focus-visible {
+  color: hsl(219, 29%, 14%);
 }/*# sourceMappingURL=main.css.map */
