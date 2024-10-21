@@ -74,12 +74,7 @@ h2 {
 }
 
 p {
-  max-width: 35ch;
-}
-@media screen and (min-width: 768px) {
-  p {
-    max-width: 65ch;
-  }
+  max-width: 65ch;
 }
 
 .testimonial-card {
@@ -87,6 +82,7 @@ p {
   color: hsl(219, 29%, 14%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .testimonial-card .testimonial-header {
   display: grid;
@@ -131,6 +127,7 @@ p {
   color: hsl(0, 0%, 100%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .daniel .testimonial-header {
   display: grid;
@@ -175,6 +172,7 @@ p {
   color: hsl(0, 0%, 100%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .jonathan .testimonial-header {
   display: grid;
@@ -219,6 +217,7 @@ p {
   color: hsl(217, 19%, 35%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .jeanette .testimonial-header {
   display: grid;
@@ -263,6 +262,7 @@ p {
   color: hsl(0, 0%, 100%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .patrick .testimonial-header {
   display: grid;
@@ -307,6 +307,7 @@ p {
   color: hsl(217, 19%, 35%);
   padding: 2rem;
   border-radius: 1rem;
+  width: 100%;
 }
 .kira .testimonial-header {
   display: grid;
