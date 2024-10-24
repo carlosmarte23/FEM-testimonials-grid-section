@@ -2,22 +2,29 @@
 
 .testimonial-card {
   @include card();
+  width: 100%;
+  height: 100%;
 }
 
 .daniel {
   @include card($color-violet, $color-white, $color-violet-light);
+  grid-area: daniel;
 }
 
 .jonathan {
   @include card($color-gray-blue, $color-white, $color-gray-blue);
+  grid-area: jonathan;
 }
 
 .jeanette {
   @include card($color-white, $color-gray-blue, $color-white);
+  grid-area: jeanette;
 }
 .patrick {
   @include card($color-dark-blue, $color-white, $color-dark-blue);
+  grid-area: patrick;
 }
 .kira {
   @include card($color-white, $color-gray-blue, $color-white);
+  grid-area: kira;
 }

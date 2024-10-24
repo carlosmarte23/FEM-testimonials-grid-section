@@ -85,10 +85,6 @@ h2 {
   line-height: 1.6;
 }
 
-p {
-  max-width: 65ch;
-}
-
 .testimonial-card {
   background-color: hsl(0, 0%, 100%);
   color: hsl(219, 29%, 14%);
@@ -96,6 +92,8 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 .testimonial-card:hover, .testimonial-card:focus-visible {
   transform: scale(1.05);
@@ -153,6 +151,7 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  grid-area: daniel;
 }
 .daniel:hover, .daniel:focus-visible {
   transform: scale(1.05);
@@ -210,6 +209,7 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  grid-area: jonathan;
 }
 .jonathan:hover, .jonathan:focus-visible {
   transform: scale(1.05);
@@ -267,6 +267,7 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  grid-area: jeanette;
 }
 .jeanette:hover, .jeanette:focus-visible {
   transform: scale(1.05);
@@ -324,6 +325,7 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  grid-area: patrick;
 }
 .patrick:hover, .patrick:focus-visible {
   transform: scale(1.05);
@@ -381,6 +383,7 @@ p {
   border-radius: 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  grid-area: kira;
 }
 .kira:hover, .kira:focus-visible {
   transform: scale(1.05);
@@ -446,6 +449,26 @@ body {
   width: 85%;
   padding: 5rem 0;
   padding-block-end: 1rem;
+}
+@media screen and (width > 768px) {
+  .testimonials {
+    display: grid;
+    width: 90%;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "daniel daniel jonathan" "jeanette patrick patrick" "kira kira kira";
+  }
+}
+@media screen and (width > 1024px) {
+  .testimonials {
+    display: grid;
+    width: 90%;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  }
 }
 
 .attribution {
